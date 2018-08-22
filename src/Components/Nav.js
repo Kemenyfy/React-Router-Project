@@ -6,15 +6,9 @@ class Nav extends Component {
         return (
             <header className="App-header">
                 <ul>
-                    <li>
-                        <Link to="/">Category List</Link>
-                    </li>
-                    <li>
-                        <Link to="/page1">Go to Page 1</Link>
-                    </li>
-                    <li>
-                        <Link to="/page2">Go to Page 2</Link>
-                    </li>
+                    <li><Link to="/">Category List</Link></li>
+                    <li><Link to="/page1">Photo List</Link></li>
+                    <li><Link to="/page2">Photo Detail</Link></li>
                 </ul>
             </header>
         );

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
-import CategoryList from './Components/CategoryList'
 import Nav from './Components/Nav'
-import Page1 from './Components/Page1'
-import Page2 from './Components/Page2'
+import CategoryList from './Components/CategoryList'
+import PhotoList from './Components/PhotoList'
+import PhotoDetail from './Components/PhotoDetail'
 
 class App extends Component {
   render() {
@@ -15,8 +14,8 @@ class App extends Component {
           <Nav />
           <Switch>
             <Route path="/" exact component={CategoryList} />
-            <Route path="/page1" exact component={Page1} />
-            <Route path="/page2" exact component={Page2} />
+            <Route path="/page1" exact component={PhotoList} />
+            <Route path="/page2" exact component={PhotoDetail} />
           </Switch>
 
         </div>

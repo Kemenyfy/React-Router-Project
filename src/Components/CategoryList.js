@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Stuff from '../stuff.json'
+
 
 class CategoryList extends Component {
     render() {
