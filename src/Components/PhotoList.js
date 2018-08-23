@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import Stuff from './src/stuff.json'
+import { Link } from 'react-router-dom'
+import stuff from '../stuff.json'
 
 class PhotoList extends Component {
     render() {
         return (
-            <h1>
-                Photo List
-            </h1>
+            <section className='Photos'>
+                {stuff[this.props.match.params.category].stuff[0].title}
+            </section>
         );
     }
 }

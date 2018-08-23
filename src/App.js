@@ -10,15 +10,20 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Nav />
+        <section className="App">
+          <header className='Header'>
+            <section>
+              <h1>Things that I like</h1>
+              <h5>A Photo Gallery made by somebody/somehow/maybe</h5>
+            </section>
+            <Nav />
+          </header>  
           <Switch>
             <Route path="/" exact component={CategoryList} />
             <Route path="/page1" exact component={PhotoList} />
             <Route path="/page2" exact component={PhotoDetail} />
           </Switch>
-
-        </div>
+        </section>
       </Router>
     );
   }
