@@ -2,7 +2,7 @@
 
 }
 
-header {  
+.Header {  
   display: flex;
   justify-content: space-between;
   height: 150px;
@@ -24,4 +24,15 @@ li a {
   color: black;
   text-decoration-line: none;
   padding-left: 20px;
+}
+
+.CatList {
+  display: flex;
+  flex-direction: row;
+}
+
+image img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
